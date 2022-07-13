@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_one"
+        android:icon="@drawable/ic_baseline_music_note_24"
+        android:title="one" />
+
+    <item
+        android:id="@+id/menu_two"
+        android:icon="@drawable/ic_baseline_place_24"
+        android:title="two" />
+
+    <item
+        android:id="@+id/menu_three"
+        android:icon="@drawable/ic_baseline_newspaper_24"
+        android:title="three" />
+
+</menu>
