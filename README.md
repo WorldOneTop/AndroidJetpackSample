@@ -17,3 +17,5 @@ https://velog.io/@dlwpdlf147/Android-Navigation-Component-%EC%8B%9C%EC%9E%91%ED%
 $ git init
 $ git clone -b Navigation --single-branch https://github.com/WorldOneTop/AndroidJetpackSample.git
 ```
+
+![Navigation 영상](https://user-images.githubusercontent.com/45085513/178919148-1aa4ac6b-0153-490a-9e3c-65d4425e58a2.gif)
