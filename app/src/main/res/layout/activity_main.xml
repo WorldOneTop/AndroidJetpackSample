@@ -5,8 +5,8 @@
             name="myData"
             type="com.example.jetpacksample.MainActivity" />
         <variable
-            name="user"
-            type="com.example.jetpacksample.data.User" />
+            name="viewModel"
+            type="com.example.jetpacksample.ui.UserViewModel" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -29,15 +29,15 @@
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@{user.toString()}"
-        android:onClick="@{() -> myData.onClickUser(user)}"
+        android:text="@{viewModel.userData.toString()}"
+        android:onClick="@{() -> myData.onClickUser(viewModel.userData)}"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text" />
     <Button
         android:id="@+id/btnNewUser"
         android:text="Change phone number"
-        android:onClick="@{myData::onClickChange}"
+        android:onClick="@{() -> viewModel.updateUser()}"
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/text2"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,6 +45,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <TextView
+        android:id="@+id/txtTime"
+        android:text="@{viewModel.currentTime}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txtTimeSound"
+        android:text="@{viewModel.timeSound}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
