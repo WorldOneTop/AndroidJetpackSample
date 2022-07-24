@@ -5,15 +5,20 @@ import androidx.lifecycle.LiveData
 import androidx.room.*
 import androidx.room.Room
 import androidx.sqlite.db.SupportSQLiteDatabase
+import com.google.gson.annotations.SerializedName
 import kotlinx.coroutines.flow.Flow
 
 @Entity
 data class User(
     @PrimaryKey val id: Int,
     val email: String?,
+    val avatar: String?,
+
+    @SerializedName("first_name")
     @ColumnInfo(name = "first_name") val firstName: String?,
-    @ColumnInfo(name = "last_name") val lastName: String?,
-    val avatar: String?
+
+    @SerializedName("last_name")
+    @ColumnInfo(name = "last_name") val lastName: String?
 )
 
 @Dao

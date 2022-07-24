@@ -1,13 +1,10 @@
 package com.example.jetpacksample
 
-import android.util.Log
 import androidx.lifecycle.*
 import com.example.jetpacksample.room.User
 import com.example.jetpacksample.room.UserDao
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class UserViewModel(var userDao:UserDao):ViewModel() {
     val currentID: MutableLiveData<Int> = MutableLiveData<Int>(0)
@@ -23,6 +20,8 @@ class UserViewModel(var userDao:UserDao):ViewModel() {
     fun moveToIndex(index:Int){
         currentID.value = currentID.value?.plus(index)
     }
+
+
 }
 class UserVMFactory(private val param: UserDao) : ViewModelProvider.Factory {
 

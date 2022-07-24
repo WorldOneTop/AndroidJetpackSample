@@ -21,6 +21,13 @@
             android:text="@{Integer.toString(viewModel.currentID)}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            app:imageFromUrl="@{viewModel.user.avatar}"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -67,6 +74,7 @@
                 android:layout_margin="5dp"/>
             <Button
                 android:id="@+id/btnAddRetrofit"
+                android:text="New data Retrofit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
