@@ -21,7 +21,6 @@ $ git clone -b Room_Retrofit --single-branch https://github.com/WorldOneTop/Andr
 ```
 
 
-작동 영상
-https://user-images.githubusercontent.com/45085513/180636888-a20ab47d-99a9-4019-b573-5c5b32abd2a2.mp4
+작동 영상    
 
-
+https://user-images.githubusercontent.com/45085513/180637064-d46d8f36-6b66-4944-9016-dc350364bea8.mp4
