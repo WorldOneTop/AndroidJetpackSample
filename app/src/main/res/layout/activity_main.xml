@@ -5,11 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:orientation="vertical"
     android:gravity="center">
 
     <Button
         android:id="@+id/local"
-        android:text="로컬 DB"
+        android:text="ROOM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/network"
+        android:text="RETROFIT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </LinearLayout>

@@ -14,7 +14,7 @@
         android:theme="@style/Theme.JetpackSample"
         tools:targetApi="31">
         <activity
-            android:name=".local.LocalActivity"
+            android:name=".PagingActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -26,5 +26,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

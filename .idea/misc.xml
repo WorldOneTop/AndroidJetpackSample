@@ -5,7 +5,11 @@
       <map>
         <entry key="..\:/Users/dlwpd/Desktop/AndroidJetpackSample/app/src/main/res/layout/activity_local.xml" value="0.5536458333333333" />
         <entry key="..\:/Users/dlwpd/Desktop/AndroidJetpackSample/app/src/main/res/layout/activity_main.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/dlwpd/Desktop/AndroidJetpackSample/app/src/main/res/layout/activity_network.xml" value="0.3848958333333333" />
+        <entry key="..\:/Users/dlwpd/Desktop/AndroidJetpackSample/app/src/main/res/layout/activity_paging.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/dlwpd/Desktop/AndroidJetpackSample/app/src/main/res/layout/row_local.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/dlwpd/Desktop/AndroidJetpackSample/app/src/main/res/layout/row_network.xml" value="0.3848958333333333" />
+        <entry key="..\:/Users/dlwpd/Desktop/AndroidJetpackSample/app/src/main/res/layout/row_paging.xml" value="0.34791666666666665" />
       </map>
     </option>
   </component>
